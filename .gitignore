@@ -1,0 +1,13 @@
+# Project place file
+/jack_workflow_template.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# VScode settings
+/.vscode
+
+# Misc
+/.DS_Store
+./sourcemap.json
