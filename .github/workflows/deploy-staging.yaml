@@ -10,6 +10,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    environment: CI/CD
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
