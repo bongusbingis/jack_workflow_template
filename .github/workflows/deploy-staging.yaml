@@ -1,4 +1,4 @@
-name: Deploy to Staging
+name: CD
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
 
   deploy:
-    name: Deploy
+    name: Deploy to Staging
     runs-on: ubuntu-latest
     environment: CI/CD
     steps:
