@@ -19,5 +19,6 @@ jobs:
       with:
           token: ${{ SECRETS.GITHUB_TOKEN }}
 
+    - name: Lint
       run: |
         selene ./src
