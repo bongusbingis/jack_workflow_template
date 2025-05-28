@@ -22,4 +22,5 @@ jobs:
       with:
           token: ${{ SECRETS.GITHUB_TOKEN }}
 
-    - run: rbxcloud experience publish --filename game.rbxl --place-id ${{ vars.STAGING_PLACE_ID }} --universe-id ${{ vars.UNIVERSE_ID }} -t published --api-key ${{ env.API_KEY }}
+    - run: echo ${{ secrets.API_KEY }}
+    - run: rbxcloud experience publish --filename game.rbxl --place-id ${{ vars.STAGING_PLACE_ID }} --universe-id ${{ vars.UNIVERSE_ID }} -t published --api-key ${{ secrets.API_KEY }}
