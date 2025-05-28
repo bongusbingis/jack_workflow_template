@@ -6,7 +6,6 @@ on:
     - master
 
 jobs:
-
   deploy:
     name: Deploy to Staging
     runs-on: ubuntu-latest
@@ -18,9 +17,10 @@ jobs:
     - uses: ok-nick/setup-aftman@v0.3.0
       name: Install aftman
       env: 
-          API_KEY: ${{ secrets.API_KEY }}
+        API_KEY: ${{ secrets.API_KEY }}
       with:
-          token: ${{ SECRETS.GITHUB_TOKEN }}
+        token: ${{ SECRETS.GITHUB_TOKEN }}
 
-    - run: echo ${{ secrets.API_KEY }}
-    - run: rbxcloud experience publish --filename game.rbxl --place-id ${{ vars.STAGING_PLACE_ID }} --universe-id ${{ vars.UNIVERSE_ID }} -t published --api-key ${{ secrets.API_KEY }}
+    - name: "Deploy"
+      run: |
+        rbxcloud experience publish --filename game.rbxl --place-id ${{ vars.STAGING_PLACE_ID }} --universe-id ${{ vars.UNIVERSE_ID }} -t published --api-key ${{ secrets.API_KEY }}
