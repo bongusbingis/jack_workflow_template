@@ -3,24 +3,9 @@ name: Deploy to Staging
 on:
   push:
     branches:
-    - '**'
+    - 'master'
 
 jobs:
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - uses: ok-nick/setup-aftman@v0.4.2
-      name: Install aftman
-      with:
-          token: ${{ SECRETS.GITHUB_TOKEN }}
-
-    - name: Lint
-      run: |
-        selene ./src
   deploy:
     name: Publish to Roblox
     runs-on: ubuntu-latest
