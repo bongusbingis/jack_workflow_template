@@ -21,4 +21,5 @@ end
 
 acquireClientModulesAndRunInNewThread():andThen(function()
     print("Client modules loaded successfully.")
+    print("a")
 end)
