@@ -8,7 +8,7 @@ local Promise = require(Packages.Promise)
 
 ---> runtime
 local function acquireClientModulesAndRunInNewThread()
-    return Promise.new(function(resolveAfterStart: error, _)
+    return Promise.new(function(resolveAfterStart, _)
         Promise.new(function(resolveAfterInit, _)
             Loader.SpawnAll(Loader.LoadChildren(script.Parent.Runtime), "Init", false)
             resolveAfterInit()
