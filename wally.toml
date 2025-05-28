@@ -1,7 +1,16 @@
 [package]
-name = "jackcrowell/jack_workflow_template"
+name = "jackcrowell/jackworkflowtemplate"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 
 [dependencies]
+Promise = "evaera/promise@4.0.0"
+Janitor = "howmanysmall/janitor@1.18.3"
+GoodSignal = "stravant/goodsignal@0.3.0"
+ProfileService = "howmanysmall/typed-profile-service@1.0.6"
+TableUtil = "sleitnick/table-util@1.2.1"
+ByteNet = "ffrostflame/bytenet@0.4.6"
+Knit = "sleitnick/knit@1.7.0"
+Cmdr = "evaera/cmdr@1.12.0"
+Loader = "bongusbingis/loader@2.0.1"
