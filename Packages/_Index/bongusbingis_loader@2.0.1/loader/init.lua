@@ -124,6 +124,10 @@ end
 ]=]
 function Loader.SpawnAll(loadedModules: { [string]: any }, methodName: string, shouldRunInNewThread: boolean)
 	for name, mod in loadedModules do
+		if mod["Disabled"] then
+			continue
+		end
+		
 		local method = mod[methodName]
 		if type(method) == "function" then
 			local function callMethod()

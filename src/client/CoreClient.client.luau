@@ -20,5 +20,5 @@ local function acquireClientModulesAndRunInNewThread()
 end
 
 acquireClientModulesAndRunInNewThread():andThen(function()
-    print("Server modules loaded successfully.")
+    print("Client modules loaded successfully.")
 end)
