@@ -3,7 +3,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Packages = ReplicatedStorage:WaitForChild("Packages")
 
 ---> dependencies
-local Module = { Disabled = true }
+local Module = { Disabled = false}
 
 ---> types
 
@@ -13,7 +13,7 @@ local Module = { Disabled = true }
 
 ---> public functions
 function Module:Init()
-    print("Init!")
+    print("Init test dev client!")
 end
 
 function Module:Start()
