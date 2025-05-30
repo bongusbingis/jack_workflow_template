@@ -3,7 +3,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Packages = ReplicatedStorage:WaitForChild("Packages")
 
 ---> dependencies
-local Module = { Disabled = true }
+local Module = { Disabled = false}
 
 ---> types
 
