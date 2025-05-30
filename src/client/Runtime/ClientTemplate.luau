@@ -13,8 +13,7 @@ local Module = { Disabled = true }
 
 ---> public functions
 function Module:Init()
-    print("Init!")
-    
+    print("Init test dev client!")
 end
 
 function Module:Start()
