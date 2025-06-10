@@ -1,23 +1,27 @@
----> service
+---> module declaration
+local Module = { Disabled = true }
+
+---> services
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Packages = ReplicatedStorage:WaitForChild("Packages")
 
 ---> dependencies
-local Module = { Disabled = false}
+local Packages = ReplicatedStorage:WaitForChild("Packages")
 
 ---> types
 
 ---> globals
 
+---> constants
+
 ---> private functions
 
 ---> public functions
 function Module:Init()
-    print("Init test dev client!")
+    print("Init client")
 end
 
 function Module:Start()
-    print("Start!")
+    print("Start client")
 end
 
 return Module
